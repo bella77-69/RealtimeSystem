@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { connect } from 'react-redux';
-import { setAvailable } from '../../actions/current';
-import { getSlot } from '../../actions/slot';
+import React, { useState } from "react";
+import { connect } from "react-redux";
+import { setAvailable } from "../../actions/current";
+import { getSlot } from "../../actions/slot";
 
 const BookingForm = ({ slot, available, current, setAvailable, getSlot }) => {
   const now = new Date();
@@ -27,16 +27,16 @@ const BookingForm = ({ slot, available, current, setAvailable, getSlot }) => {
   };
 
   return (
-    <div className='content__form'>
-      <h3 className='header__heading my-1'>Make a Booking</h3>
-      <div className='form__group form__group--margin-top'>
+    <div className="content__form">
+      <h3 className="header__heading my-1">Make a Booking</h3>
+      <div className="form__group form__group--margin-top">
         <form onSubmit={(e) => onSubmit(e)}>
-          <label className='form__label form__label--booking'>
-            {'Start time'}
+          <label className="form__label form__label--booking">
+            {"Start time"}
           </label>
           <select
-            name='startTime'
-            className='form__input form__input--select'
+            name="startTime"
+            className="form__input form__input--select"
             onChange={(e) => onChange(e)}
           >
             <option>* Select Slot</option>
@@ -57,7 +57,7 @@ const BookingForm = ({ slot, available, current, setAvailable, getSlot }) => {
               </option>
             ))}
           </select>
-          <button type='submit' className='btn btn-primary my-1'>
+          <button type="submit" className="btn btn-primary my-1">
             Make a Booking
           </button>
         </form>
