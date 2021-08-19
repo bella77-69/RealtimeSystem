@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -245,10 +245,10 @@ img {
   color: #888;
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
 .form select,
 .form textarea {
   display: block;
@@ -258,7 +258,7 @@ img {
   border: 1px solid #ccc;
 }
 
-.form input[type='submit'],
+.form input[type="submit"],
 button {
   font: inherit;
 }
@@ -363,10 +363,10 @@ button {
 .profile-grid {
   display: grid;
   grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
   grid-gap: 1rem;
 }
 
@@ -549,11 +549,11 @@ button {
 
   .profile-grid {
     grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
   }
 
   .profile-about .skills {
@@ -576,41 +576,32 @@ button {
 }
 
 .content__calendar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  align-items: center;
-  grid-gap: 2rem;
+  display: flex;
+  justify-content: space-between;
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
-  cursor: pointer;
-  grid-column: 1;
-  grid-row: 1;
-  width: 100%;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .content__calendar {
     display: block;
   }
-}
+} */
 
 .content__form {
   background: #fafafa;
   -webkit-box-shadow: 0px 2px 5px 0px #cecece;
   box-shadow: 0px 2px 5px 0px #cecece;
-  grid-column: 3;
-  grid-row: 1;
-  min-width: 20rem;
   padding: 0 5.8rem;
-  width: 100%;
+  width: 60%;
 }
 .header__page {
   grid-column: 1/-1;
   grid-row: 1;
 }
 .header__heading {
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
 }
 .header__heading--main {
   color: #f4f4f4;
@@ -717,7 +708,7 @@ button {
   box-sizing: border-box;
   color: #1c1c1c;
   display: block;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 1.4rem;
   height: 3.8rem;
   margin-top: 0.4rem;
@@ -727,7 +718,7 @@ button {
 .form__input--textarea {
   border: 0.1rem solid #a5a5a5;
   display: block;
-  font-family: 'raleway', sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 1.8rem;
   height: 6rem;
   margin-top: 0.4rem;
@@ -736,6 +727,7 @@ button {
   width: 100%;
 }
 
+/* 
 .cal {
   background-color: #fafafa;
 }
@@ -747,7 +739,7 @@ button {
 
 .cal table {
   padding-left: 25%;
-}
+} */
 
 /* .rdtDays {
   color: green;

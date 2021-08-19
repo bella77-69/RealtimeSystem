@@ -14,7 +14,7 @@ const BookingForm = ({ slot, available, current, setAvailable, getSlot }) => {
 
   const onChange = (e) => {
     const selectedIndex = e.target.options.selectedIndex;
-    const id = e.target.options[selectedIndex].getAttribute('data-key');
+    const id = e.target.options[selectedIndex].getAttribute("data-key");
     setAvailableId(id);
     // console.log(e.target.options[selectedIndex].getAttribute('data-key'));
   };
@@ -50,7 +50,10 @@ const BookingForm = ({ slot, available, current, setAvailable, getSlot }) => {
                   (slot.startTime <= time && date === current.date) ||
                   date > current.date ||
                   month > current.month ||
-                  year > current.year
+                  year > current.year ||
+                  date < current.date ||
+                  month < current.month ||
+                  year < current.year
                 }
               >
                 {slot.startTime}:00 - {slot.endTime}:00

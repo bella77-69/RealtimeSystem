@@ -1,8 +1,9 @@
-import React, { Fragment, useState } from 'react';
-import Datetime from 'react-datetime';
-import { connect } from 'react-redux';
-import { setCurrent } from '../../actions/current';
-import { setAlert } from '../../actions/alert';
+import React, { Fragment, useState } from "react";
+import Datetime from "react-datetime";
+import { connect } from "react-redux";
+import { setCurrent } from "../../actions/current";
+import { setAlert } from "../../actions/alert";
+import "react-datetime/css/react-datetime.css";
 
 const Calendar = ({ setCurrent }) => {
   const [formData, setFormData] = useState({
@@ -25,10 +26,12 @@ const Calendar = ({ setCurrent }) => {
     );
   };
   return (
-    <div className='cal'>
+    <div className="cal">
       <Datetime
-        dateFormat='YYYY-MM-DD'
+        dateFormat="YYYY-MM-DD"
         timeFormat={false}
+        // value={new Date()}
+        open={true}
         onChange={(date) => onChange(date)}
       />
     </div>

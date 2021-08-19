@@ -16,16 +16,16 @@ const Booking = ({
     getSlot(match.params.id);
   }, [getSlot]);
 
-  if (loading === false) {
-    const available = slot.available.filter((slot) => {
-      return (
-        new Date(slot.date).getDate() === date &&
-        new Date(slot.date).getMonth() + 1 === month &&
-        new Date(slot.date).getFullYear() === year
-      );
-    });
-    console.log(available);
-  }
+  // if (loading === false) {
+  //   const available = slot.available.filter((slot) => {
+  //     return (
+  //       new Date(slot.date).getDate() === date &&
+  //       new Date(slot.date).getMonth() + 1 === month &&
+  //       new Date(slot.date).getFullYear() === year
+  //     );
+  //   });
+  //   console.log(available);
+  // }
 
   return (
     <div>
